@@ -39,6 +39,9 @@
       <HintPath>E:\SteamLibrary\steamapps\common\One Step From Eden\OSFE_Data\Managed\Assembly-CSharp.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>E:\SteamLibrary\steamapps\common\One Step From Eden\OSFE_Data\Managed\Assembly-CSharp-firstpass.dll</HintPath>
+    </Reference>
     <Reference Include="Sirenix.Serialization, Version=2.0.20.0, Culture=neutral, PublicKeyToken=null">
       <HintPath>E:\SteamLibrary\steamapps\common\One Step From Eden\OSFE_Data\Managed\Sirenix.Serialization.dll</HintPath>
       <Private>False</Private>
@@ -61,7 +64,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddToDeckEnhancement.cs" />
+    <Compile Include="ICustomEnhancement.cs" />
     <Compile Include="ICustomZone.cs" />
+    <Compile Include="Patching\LocalizationPatches.cs" />
+    <Compile Include="Patching\PostCtrlPatches.cs" />
+    <Compile Include="Patching\PostCtrlGenerateEnhancementPatches.cs" />
     <Compile Include="Patching\ZoningPatches.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SelicyZone.cs" />
